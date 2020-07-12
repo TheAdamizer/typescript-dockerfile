@@ -8,5 +8,6 @@ RUN mkdir -p /srv/typescript
 COPY . /data
 
 RUN apk update && rm -rf /var/cache/apk/*
+RUN apk add docker-cli
 
 CMD ["echo", "hello, world"]
